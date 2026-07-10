@@ -2,10 +2,17 @@ from app.database.seed import COUNTRIES, REGIONS
 
 
 def test_reference_seed_data_has_unique_codes_and_valid_regions() -> None:
-    region_codes = {code for code, _ in REGIONS}
-    country_codes = [code for code, _, _ in COUNTRIES]
+    region_slugs = {slug for slug, _ in REGIONS}
+    country_iso_codes = [iso_code for iso_code, _, _, _, _ in COUNTRIES]
 
-    assert region_codes == {"AF", "AS", "EU", "NA", "OC", "SA"}
-    assert len(country_codes) == len(set(country_codes))
-    assert all(region_code in region_codes for _, _, region_code in COUNTRIES)
-    assert "GB" in country_codes
+    assert region_slugs == {
+        "africa",
+        "asia",
+        "europe",
+        "north-america",
+        "oceania",
+        "south-america",
+    }
+    assert len(country_iso_codes) == len(set(country_iso_codes))
+    assert all(region_slug in region_slugs for _, _, _, _, region_slug in COUNTRIES)
+    assert "GBR" in country_iso_codes

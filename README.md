@@ -42,5 +42,7 @@ make lint
 docker compose down -v
 ```
 
-Architecture and contribution rules are documented in [docs/architecture.md](docs/architecture.md)
-and [docs/development.md](docs/development.md).
+Architecture and contribution rules are documented in
+[docs/04_Architecture.md](docs/04_Architecture.md) and
+[docs/09_Development_Process.md](docs/09_Development_Process.md).
+Delivery and business operations are maintained in [management/](management/).

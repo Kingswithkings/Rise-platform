@@ -1,3 +1,4 @@
 # Design
 
-Product design files and design-system decisions belong here.
+Product design assets and standards live here. Keep source links, ownership, and export
+instructions documented alongside each asset family.

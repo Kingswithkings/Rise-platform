@@ -10,6 +10,8 @@ from app.auth.routes import router as auth_router
 from app.config.settings import settings
 from app.core.logging import configure_logging
 from app.database.session import SessionFactory, engine
+from app.geography.router import router as geography_router
+from app.trust.router import router as trust_router
 
 configure_logging()
 
@@ -29,7 +31,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 app.include_router(auth_router, prefix="/api/v1")
-
+app.include_router(trust_router, prefix="/api/v1")
+app.include_router(geography_router, prefix="/api/v1")
 
 @app.get("/health", tags=["operations"])
 async def health() -> dict[str, str]:

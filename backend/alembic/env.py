@@ -5,10 +5,15 @@ from sqlalchemy.engine import Connection
 from sqlalchemy.ext.asyncio import async_engine_from_config
 
 from alembic import context
-from app.countries.models import Country  # noqa: F401
 from app.config.settings import settings
 from app.database.base import Base
-from app.regions.models import Region  # noqa: F401
+from app.geography.models import City, Country, Region  # noqa: F401
+from app.trust.models import (  # noqa: F401
+    BusinessVerification,
+    Review,
+    TrustEvent,
+    TrustProfile,
+)
 from app.users.models import User  # noqa: F401
 
 config = context.config
