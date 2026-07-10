@@ -34,6 +34,7 @@ app.include_router(auth_router, prefix="/api/v1")
 app.include_router(trust_router, prefix="/api/v1")
 app.include_router(geography_router, prefix="/api/v1")
 
+
 @app.get("/health", tags=["operations"])
 async def health() -> dict[str, str]:
     async with SessionFactory() as session:
