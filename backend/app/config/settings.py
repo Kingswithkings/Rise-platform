@@ -15,7 +15,7 @@ class Settings(BaseSettings):
         default="development-secret-key-change-before-production", min_length=32
     )
     access_token_expire_minutes: int = 30
-    seed_admin_email: str = "admin@rise.local"
+    seed_admin_email: str = "admin@riseplatform.co.uk"
     seed_admin_password: str = "ChangeMe123!"
     cors_origins: list[str] = ["http://localhost:3000"]
 

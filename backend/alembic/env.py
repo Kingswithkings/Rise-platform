@@ -5,6 +5,7 @@ from sqlalchemy.engine import Connection
 from sqlalchemy.ext.asyncio import async_engine_from_config
 
 from alembic import context
+from app.categories.models import Category  # noqa: F401
 from app.config.settings import settings
 from app.database.base import Base
 from app.geography.models import City, Country, Region  # noqa: F401

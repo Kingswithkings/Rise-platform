@@ -7,6 +7,7 @@ from redis.asyncio import Redis
 from sqlalchemy import text
 
 from app.auth.routes import router as auth_router
+from app.categories.router import router as categories_router
 from app.config.settings import settings
 from app.core.logging import configure_logging
 from app.database.session import SessionFactory, engine
@@ -33,6 +34,7 @@ app.add_middleware(
 app.include_router(auth_router, prefix="/api/v1")
 app.include_router(trust_router, prefix="/api/v1")
 app.include_router(geography_router, prefix="/api/v1")
+app.include_router(categories_router, prefix="/api/v1")
 
 
 @app.get("/health", tags=["operations"])
