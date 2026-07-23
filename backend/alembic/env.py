@@ -9,6 +9,7 @@ from app.categories.models import Category  # noqa: F401
 from app.config.settings import settings
 from app.database.base import Base
 from app.geography.models import City, Country, Region  # noqa: F401
+from app.stores.models import Store, StoreDocument, StoreHour, StoreImage  # noqa: F401
 from app.trust.models import (  # noqa: F401
     BusinessVerification,
     Review,

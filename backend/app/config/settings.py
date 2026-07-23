@@ -9,7 +9,7 @@ class Settings(BaseSettings):
 
     app_name: str = "RISE API"
     environment: str = "development"
-    database_url: str = "postgresql+asyncpg://rise:rise_dev_password@postgres:5432/rise"
+    database_url: str = "postgresql+asyncpg://rise:rise_dev_password@localhost:5432/rise"
     redis_url: str = "redis://redis:6379/0"
     secret_key: str = Field(
         default="development-secret-key-change-before-production", min_length=32

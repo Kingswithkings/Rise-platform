@@ -12,3 +12,33 @@ manages schema evolution.
 - Application code accesses data through repositories.
 
 Sprint 1 seeds six regions and fourteen initial launch or expansion countries.
+
+## Database Roadmap
+
+The database will gradually include:
+
+- `users`
+- `roles`
+- `permissions`
+- `countries`
+- `cities`
+- `categories`
+- `stores`
+- `products`
+- `services`
+- `orders`
+- `payments`
+- `reviews`
+- `favorites`
+- `notifications`
+- `messages`
+- `trust_profiles`
+- `trust_events`
+- `audit_logs`
+
+Later marketplace tables include:
+
+- `product_images`
+- `store_images`
+- `store_documents`
+- `store_hours`

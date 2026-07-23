@@ -21,6 +21,23 @@ docker compose up --build backend
 
 Swagger is available at `http://localhost:8000/docs`.
 
+## Database migrations
+
+When running Alembic from your Mac terminal, use `localhost` because the database is
+published from Docker to your host machine:
+
+```bash
+cd backend
+DATABASE_URL=postgresql+asyncpg://rise:rise_dev_password@localhost:5432/rise alembic revision --autogenerate -m "create stores tables"
+DATABASE_URL=postgresql+asyncpg://rise:rise_dev_password@localhost:5432/rise alembic upgrade head
+```
+
+When running Alembic inside Docker, the hostname is `postgres`:
+
+```bash
+docker compose exec backend alembic upgrade head
+```
+
 ## Folder layout
 
 - `app/` — application and feature modules

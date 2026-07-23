@@ -11,3 +11,10 @@ Production observability must cover:
 - User-journey and business health metrics
 
 Alert thresholds, ownership, and escalation paths must be defined before public beta.
+
+## Baseline Additions
+
+- Error tracking
+- Readiness endpoint: `/ready`
+- Basic performance metrics
+- Automated PostgreSQL backups

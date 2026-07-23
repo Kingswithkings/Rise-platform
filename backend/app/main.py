@@ -12,6 +12,7 @@ from app.config.settings import settings
 from app.core.logging import configure_logging
 from app.database.session import SessionFactory, engine
 from app.geography.router import router as geography_router
+from app.stores.router import router as stores_router
 from app.trust.router import router as trust_router
 
 configure_logging()
@@ -35,6 +36,7 @@ app.include_router(auth_router, prefix="/api/v1")
 app.include_router(trust_router, prefix="/api/v1")
 app.include_router(geography_router, prefix="/api/v1")
 app.include_router(categories_router, prefix="/api/v1")
+app.include_router(stores_router, prefix="/api/v1")
 
 
 @app.get("/health", tags=["operations"])

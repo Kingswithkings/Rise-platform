@@ -8,64 +8,91 @@ Deliver a production-ready AI marketplace with enterprise engineering standards.
 
 Status: Complete
 
-- Repository
-- Docker
-- Database
-- FastAPI architecture
-- PostgreSQL
-- SQLAlchemy
-- Alembic
 - Authentication
-- JWT
+- Users
+- Geography
 - 1stKings Trust
-- Geography: Regions, Countries, Cities
+- Categories
 
-## Phase 2 — Marketplace Foundation
+## Phase 2 — Marketplace Core
 
 Status: In Progress
 
-- Geography
-- Categories
 - Stores
 - Products
 - Services
-- Search
+- Reviews
+- Media Uploads
 
-## Phase 3 — Commerce
+Goal: a seller can create a professional storefront with products and services.
+
+## Phase 3 — Marketplace Experience
+
+- Search
+- Favorites
+- Messaging
+- Notifications
+- Nearby Services
+- Ratings
+
+Goal: buyers can discover and interact with sellers easily.
+
+## Phase 4 — Commerce
 
 - Cart
 - Orders
 - Payments
-- Checkout
+- Delivery Tracking
+- Invoices
 
-## Phase 4 — Business Platform
+Goal: support end-to-end transactions.
+
+## Phase 5 — Business Intelligence
 
 - Seller Dashboard
-- Buyer Dashboard
 - Analytics
+- Revenue
+- Reports
 
-## Phase 5 — AI
+## Phase 6 — AI Platform
 
-- AI Search
-- AI Assistant
-- Recommendations
+- Seller Assistant
+- Buyer Assistant
+- Product Generator
+- Smart Search
+- Fraud Detection
+- Recommendation Engine
 
-## Phase 6 — Launch
+AI should be built on top of a stable marketplace, not before it.
 
-- Security
-- Monitoring
-- Scaling
-- Production
+## Phase 7 — Enterprise
+
+- Multi-country
+- Multi-language
+- Multi-currency
+- Tax Engine
+- API Platform
+
+## Phase 8 — RISE v1.0
+
+- Public Launch
 
 ## Milestones
 
-| Version | Milestone |
+| Version | Goal |
 | --- | --- |
-| v0.3.0 | Marketplace Foundation |
-| v0.4.0 | Seller Platform |
-| v0.5.0 | Private Alpha |
-| v0.6.0 | Commerce |
-| v0.7.0 | Buyer Experience |
-| v0.8.0 | AI Marketplace |
-| v0.9.0 | Beta |
-| v1.0.0 | Public Launch |
+| v0.3 | Marketplace Foundation |
+| v0.4 | Seller Platform |
+| v0.5 | Private Alpha |
+| v0.6 | Commerce |
+| v0.7 | AI Marketplace |
+| v0.8 | Public Beta |
+| v1.0 | Production Launch |
+
+## Immediate Implementation Sequence
+
+1. Complete Categories, including automated tests.
+2. Build Stores.
+3. Build Products.
+4. Build Services.
+5. Implement Marketplace Search.

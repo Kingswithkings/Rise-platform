@@ -1,119 +1,191 @@
-# RISE v1.0 Execution Plan
+# RISE Execution Plan
 
-## Objective
+## Product Vision
 
-Deliver a production-ready AI marketplace with enterprise engineering standards.
+RISE is an AI-powered global marketplace that connects buyers, sellers, professionals, and service providers through trust, location, and intelligent discovery.
 
-## Phase 1 — Foundation
+## Execution Mode
 
-Status: Completed
+From this point forward, every session should produce something tangible that moves the product toward Private Alpha.
 
-Deliverables:
+Architecture should only be redesigned when necessary.
 
-- Repository structure
-- FastAPI architecture
-- PostgreSQL
-- SQLAlchemy
-- Alembic
-- Authentication
-- JWT
-- 1stKings Trust MVP
-- Geography: Regions, Countries, Cities
+## MVP Scope — Private Alpha
 
-## Phase 2 — Marketplace Foundation
+### Buyers
 
-Status: In Progress
+- Register and log in
+- Browse by region, country, and city
+- Browse categories
+- Search stores, products, and services
+- View seller profiles
+- Contact sellers
 
-This is the current focus.
+### Sellers
 
-### Sprint 3 Domains
+- Create a seller profile
+- Create and manage stores
+- Add products
+- Add services
+- View basic dashboard
+- Manage store information
 
-#### Domain 1 — Categories
+### Admin
 
-- Hierarchical categories
-- Category tree
-- CRUD
-- Swagger
-- Tests
-- Documentation
+- Manage users
+- Manage categories
+- Verify stores
+- Review trust reports
+- Moderate listings
 
-#### Domain 2 — Stores
+## Engineering Backlog
 
-- Create store
-- Store profile
-- Store branding
-- Business verification
+| Epic | Scope | Status |
+| --- | --- | --- |
+| Epic 1 – Identity | Authentication, Users, Roles | Complete |
+| Epic 2 – Geography | Regions, Countries, Cities | Complete |
+| Epic 3 – Trust | Trust Profiles, Verification, Trust Events | Complete |
+| Epic 4 – Marketplace | Categories, Stores, Products, Services | In Progress |
+| Epic 5 – Discovery | Search, Filters, Nearby Results | Planned |
+| Epic 6 – Engagement | Reviews, Favorites, Messaging, Notifications | Planned |
+| Epic 7 – Commerce | Orders, Payments, Shipping | Planned |
+| Epic 8 – Intelligence | AI Assistant, Recommendations, Fraud Detection | Planned |
+
+## Recommended Milestones
+
+### Milestone 1 — Marketplace Foundation
+
+- Categories
+- Stores
+- Products
+- Services
+
+### Milestone 2 — Marketplace Discovery
+
+- Search
+- Reviews
+- Seller Profiles
+
+### Milestone 3 — Commerce
+
+- Orders
+- Payments
+
+### Milestone 4 — AI
+
+- AI Search
+- AI Marketplace Assistant
+
+## Development Workflow
+
+```text
+Issue
+↓
+Design
+↓
+Implementation
+↓
+Tests
+↓
+Review
+↓
+Merge
+↓
+Deploy to Staging
+↓
+Acceptance Testing
+```
+
+## Next Four Implementation Sessions
+
+### Session 1 — Stores
+
+Deliver:
+
+- Store model
+- APIs
+- Verification
 - Trust integration
 
-#### Domain 3 — Products
+### Session 2 — Products
+
+Deliver:
 
 - Product catalogue
 - Images
-- Pricing
 - Inventory
-- Categories
-- Store ownership
+- Pricing
 
-#### Domain 4 — Services
+### Session 3 — Services
+
+Deliver:
 
 - Service listings
 - Availability
-- Location
-- Pricing
-- Trust integration
+- Service areas
+- Booking-ready structure
 
-#### Domain 5 — Marketplace Search
+### Session 4 — Marketplace Search
 
-- Product search
-- Service search
-- Store search
-- Filters
-- Sorting
-- Trust filters
+Deliver:
 
-## Sprint Lifecycle
+- Keyword search
+- Category filters
+- Location filters
+- Trust-based ranking
 
-Every sprint follows the same lifecycle:
+## GitHub Project Milestones
 
-1. Sprint Planning
-2. Domain Design
-3. Database Design
-4. API Design
-5. Implementation
-6. Testing
-7. Documentation
-8. Code Review
-9. Release
-10. Retrospective
+```text
+RISE v0.3
+├── Categories
+├── Stores
+├── Products
+└── Services
 
-## Milestones
+RISE v0.4
+├── Reviews
+├── Search
+└── Dashboard
 
-| Version | Milestone |
-| --- | --- |
-| v0.3.0 | Marketplace Foundation |
-| v0.4.0 | Seller Platform |
-| v0.5.0 | Private Alpha |
-| v0.6.0 | Commerce |
-| v0.7.0 | Buyer Experience |
-| v0.8.0 | AI Marketplace |
-| v0.9.0 | Beta |
-| v1.0.0 | Public Launch |
+RISE v0.5
+├── Orders
+├── Payments
+└── Messaging
+```
 
-## Immediate Next Task
+## Deployment Environments
 
-The next engineering session is the Categories Engineering Pack.
+```text
+Local Development
+↓
+Staging
+↓
+Production
+```
 
-It will deliver:
+- Local: development and debugging.
+- Staging: integration testing before release.
+- Production: live application.
 
-- Business requirements
-- Domain documentation
-- SQLAlchemy models
-- Alembic migration
-- Pydantic schemas
-- Repository layer
-- Service layer
-- FastAPI router
-- Unit tests
-- API documentation
-- Sprint documentation
-- Release notes
+## Long-Term Vision
+
+Once the marketplace is stable, RISE can evolve into:
+
+- AI business assistant
+- Professional services marketplace
+- International trade platform
+- Local services platform
+- B2B procurement marketplace
+- Business verification network powered by 1stKings Trust
+
+## Execution Order
+
+1. Finish Categories tests and verification.
+2. Build Stores.
+3. Build Products.
+4. Build Services.
+5. Build Marketplace Search.
+6. Build the Next.js frontend for these modules.
+7. Deploy Private Alpha to staging.
+8. Invite a small group of users and collect structured feedback.

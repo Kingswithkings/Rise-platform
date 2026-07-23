@@ -40,3 +40,22 @@ In Progress
 ## Status
 
 Backend implementation completed. Automated tests and frontend integration remain.
+
+## Stores Progress
+
+- [x] Engineering Pack documentation drafted
+- [x] Domain scaffold created
+- [x] Business rules documented
+- [x] Database design documented
+- [x] API design documented
+- [x] Shared base entity ADR proposed
+- [x] Core module scaffold created
+- [ ] SQLAlchemy model
+- [ ] Alembic migration
+- [ ] Pydantic schemas
+- [ ] Repository
+- [ ] Service
+- [ ] Router
+- [ ] Automated tests
+- [ ] Swagger verification
+- [ ] Frontend integration
